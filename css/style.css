@@ -102,6 +102,7 @@ h1,h2,p {
 .btn {
 	display: block;
 	width: 254px;
+	padding: 8px 0;
 	font-family: "Raleway","Arial", sans-serif;
 	font-size: 14px;
 	line-height: 44px;
@@ -113,4 +114,67 @@ h1,h2,p {
 	border-radius: 3px;
 	color: #ffffff;
 	background-color: #36aeea;
+}
+
+.about {
+	padding-top: 256px; 
+	height: 528px;	
+	background: #f6f4f4 url("../img/about-background.png") no-repeat 100px 20px;		
+}
+
+.section-title {
+	margin-bottom: 19px;
+	font-size: 20px;
+	line-height: 42.73px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.section-text {
+	width: 360px;
+	margin-bottom: 26px; 
+}
+
+.about .btn {
+	width: 135px;
+	padding: 0;
+	font-size: 12px;
+	line-height: 42.73px; 
+}
+
+.journal {
+	padding: 74px 0;
+}
+
+.journal .section-title {
+	font-size: 30px;
+	line-height: 42.73px;
+	text-align: center;
+}
+
+.journal-list {
+	font-size: 0;
+}
+
+.journal-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 380px;
+	height: 380px;
+	font-size: 14px;
+	line-height: 22.8px;	
+}
+
+.journal-item:first-child {
+	background: url("../img/journal-image-1.jpeg") no-repeat; 
+}
+
+.journal-item:nth-child(3) {
+	background: url("../img/journal-image-2.jpeg") no-repeat; 
+}
+
+.journal-item:nth-child(5) {
+	background: url("../img/journal-image-2.jpeg") no-repeat; 
 }
