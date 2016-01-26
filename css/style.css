@@ -19,7 +19,7 @@ body {
 	clear: both;
 }
 
-h1,h2,p {
+h1,h2,h3,p {
 	margin: 0;
 	padding: 0;
 }
@@ -29,7 +29,7 @@ h1,h2,p {
 	background: url("../img/header-background.jpeg") no-repeat 50% 50%;
 }
 
-.top-row {
+.top-row {	
 	padding: 22px 0;
 	margin-bottom: 132px;
 }
@@ -116,13 +116,23 @@ h1,h2,p {
 	background-color: #36aeea;
 }
 
+.waves:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 71px;
+	height: 7px;	
+	background: url("../img/spritesheet.png") no-repeat -5px -164px;
+}
+
 .about {
 	padding-top: 256px; 
 	height: 528px;	
-	background: #f6f4f4 url("../img/about-background.png") no-repeat 100px 20px;		
+	background: #f6f4f4 url("../img/world-map.png") no-repeat 100px 20px;		
 }
 
-.section-title {
+.section-title {	
 	margin-bottom: 19px;
 	font-size: 20px;
 	line-height: 42.73px;
@@ -130,6 +140,13 @@ h1,h2,p {
 	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+.section-title-center {
+	margin-bottom: 66px;
+	font-size: 30px;
+	line-height: 42.73px;
+	text-align: center;
 }
 
 .section-text {
@@ -146,13 +163,6 @@ h1,h2,p {
 
 .journal {
 	padding: 74px 0;	
-}
-
-.journal .section-title {
-	margin-bottom: 66px;
-	font-size: 30px;
-	line-height: 42.73px;
-	text-align: center;
 }
 
 .journal-list {
@@ -216,15 +226,171 @@ h1,h2,p {
 }
 
 .order {
+	position: relative;
 	padding-top: 192px; 
-	min-height: 600px;	
-	background: url("../img/order-image-2.png") no-repeat 100% 100%,
+	min-height: 500px;	
+	background:	url("../img/order-image-2.png") no-repeat 100% 100%,
 							url("../img/order-image-1.png") no-repeat 50% 120%,
-							#f6f4f4;
-							
+							#f6f4f4;							
+}
+
+.order .section-title {
+	padding-top: 31px; 
+	margin-bottom: 9px;
 }
 
 .order .section-text {
 	width: 750px;
+	font-size: 16px;
+	line-height: 26px;
 }
 
+.form-wrapper {
+	position: relative;
+	width: 848px;
+	padding: 3px;
+	padding-left: 20px;
+	padding-right: 0;  
+	background-color: #ffffff;
+}
+
+.form-wrapper input[type="text"] {	
+	width: 260px;
+	font-family: "Open Sans","Arial", sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.32px;
+	border: none;
+	outline: none;
+}
+
+.form-wrapper input[type="text"]:first-child {	
+	margin-right: 46px;
+}
+
+.form-wrapper:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 300px;
+	width: 2px;
+	height: 35px;
+	transform: translateY(-50%);
+	background-color: #848484;
+	opacity: 0.25;
+}
+
+.form-wrapper .btn {	
+	display: inline-block;
+	vertical-align: middle;	
+	margin-left: 20px;
+	border: none;
+	outline: none;
+}
+
+.protection {
+	font-style: 14px;
+	line-height: 34px;
+	letter-spacing: 0.28;
+	color: #36aeea;
+}
+
+.work {
+	position: relative;
+	padding: 74px 0;
+	min-height: 119px;	
+}
+
+.work-principles {
+	font-size: 0;
+}
+
+.principles-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 212px;
+	margin-right: 30px;
+	padding: 0 25px;	
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.principles-item:last-child {
+	margin-right: 0;
+}
+
+.principles-number {
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	margin-bottom: 58px;
+	border: 4px solid #3bb0eb;
+	border-radius: 50%;
+	line-height: 46px;
+	text-align: center;
+	color: #3bb0eb;
+}
+
+.principles-icon {
+	position: relative;
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 50%;	
+	background: #f0f3f6 url("../img/polygon.png") no-repeat 50% 50%;	
+	/*transform: rotate(58deg);*/
+}
+
+.principles-icon:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	transform: translate(-50%, -50%);
+	background: url("../img/spritesheet.png") no-repeat;	
+}
+
+.principles-item:first-child .principles-icon:before {
+	width: 32px;
+	height: 40px;
+	background: url("../img/spritesheet.png") no-repeat -96px -164px;	
+}
+
+.principles-item:nth-child(2) .principles-icon:before {
+	width: 40px;
+	height: 40px;
+	background: url("../img/spritesheet.png") no-repeat -138px -164px;	
+}
+
+.principles-item:nth-child(3) .principles-icon:before {
+	width: 38px;
+	height: 38px;
+	background: url("../img/spritesheet.png") no-repeat -188px -164px;	
+}
+
+.principles-item:nth-child(4) .principles-icon:before {
+	width: 38px;
+	height: 38px;
+	background: url("../img/spritesheet.png") no-repeat -236px -164px;	
+}
+
+.principles-title {
+	margin-bottom: 5px;
+	font-size: 16px;
+	line-height: 24.23px;
+	color: #000000;
+}
+
+.principles-text {
+	font-size: 14px;
+	line-height: 22.8px;
+}
+
+.travel {
+	min-height: 802px;
+	background: 
+	url("../img/world-map.png") no-repeat 0 0,
+	url("../img/travel-background.jpg") no-repeat -550px 0;
+}
