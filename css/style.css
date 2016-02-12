@@ -127,6 +127,7 @@ h1,h2,h3,p {
 }
 
 .about {
+	margin-bottom: 72px;
 	padding-top: 256px; 
 	height: 528px;	
 	background: #f6f4f4 url("../img/world-map.png") no-repeat 100px 20px;		
@@ -159,10 +160,6 @@ h1,h2,h3,p {
 	padding: 0;
 	font-size: 12px;
 	line-height: 42.73px; 
-}
-
-.journal {
-	padding: 74px 0;	
 }
 
 .journal-list {
@@ -228,6 +225,7 @@ h1,h2,h3,p {
 .order {
 	position: relative;
 	padding-top: 192px; 
+	margin-bottom: 72px;
 	min-height: 500px;	
 	background:	url("../img/order-image-2.png") no-repeat 100% 100%,
 							url("../img/order-image-1.png") no-repeat 50% 120%,
@@ -297,7 +295,7 @@ h1,h2,h3,p {
 
 .work {
 	position: relative;
-	padding: 74px 0;
+	margin-bottom: 106px;
 	min-height: 119px;	
 }
 
@@ -389,8 +387,137 @@ h1,h2,h3,p {
 }
 
 .travel {
-	min-height: 802px;
+	margin-bottom: 72px;
+	min-height: 902px;
 	background: 
 	url("../img/world-map.png") no-repeat 0 0,
-	url("../img/travel-background.jpg") no-repeat -550px 0;
+	url("../img/travel-background.jpg") no-repeat -550px 100%;
+}
+
+.places {
+	font-size: 0;
+}
+
+.place-item {		
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 382px;
+	margin-right: 35px;	 
+	font-size: 16px;
+	line-height: 22px;
+	/*text-align: left;*/
+	background-color: #e5e5e5;
+	color: #ffffff;	
+	border-radius: 3px;
+}
+
+.place-item:first-child {
+	background: url("../img/carpathian.jpg") no-repeat 50% 0;
+}
+
+.place-item:nth-child(2) {
+	background: url("../img/alps.jpg") no-repeat 0 0;
+}
+
+.place-item:nth-child(3) {
+	background: url("../img/pyrynees.jpg") no-repeat 0 0;
+}
+
+.place-item:nth-child(4) {
+	background: url("../img/rocky.jpg") no-repeat 0 0;
+}
+
+.place-item:last-child {
+	margin-right: 0;
+	background: url("../img/kavkaz.jpg") no-repeat 0 0;
+}
+
+.place-item-title {	
+	margin-left: 20px;
+	padding-top: 134px;
+	font-size: 28px;
+	line-height: 63px;
+}
+
+.place-item-text {
+	margin-left: 20px;
+	margin-bottom: 78px;
+	font-size: 16px;
+	line-height: 22px;	
+}
+
+.prices {		
+	padding: 20px;
+	font-size: 18px;
+	line-height: 22px;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+.old-price,
+.new-price {	
+	vertical-align: middle;	
+}
+
+.old-price {	 
+	text-decoration: line-through;	
+}
+
+.new-price {
+	font-size: 26px;	
+	text-align: right;
+}
+
+.reviews {	
+	font-size: 0;
+	height: 500px;	
+}
+
+.review-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 555px;
+	margin-right: 30px;
+	font-size: 18px;
+	line-height: 33px;	
+}
+
+.review-item:last-child {
+	margin-right: 0;
+}
+
+.review-text {
+	margin-bottom: 27px;
+}
+
+.author-avatar {
+	display: inline-block;
+	vertical-align: middle;
+	width: 68px;
+	height: 68px;	
+	margin-right: 15px;	
+}
+
+.author-avatar img {
+	border-radius: 50%;
+}
+
+.author-name,
+.author-job {
+	font-size: 16px;
+	color: #36aeea;
+}
+
+.author-name {
+	font-weight: bold;
+}
+
+.footer {	
+	height: 1076px;
+	background: 
+	url("../img/contacts-background.png") no-repeat 0 0,
+	url("../img/reviews-background.png") no-repeat 50% 0;
+
+	
 }
